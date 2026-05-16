@@ -1,107 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="monsalondulivre.fr, achat et vente de livres auto-édités" />
-<meta name="keywords" content="Achat, Vente, Livre, auto-édition" />
-<meta name="author" content="Arnaud DELPIERRE" />
-<title>monsalondulivre.fr arrive bientôt! Achat, Vente de livre, Auto-édition </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    body{
-        margin:0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg,#7c2808ff,#ffffff);
-        color:white;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-        text-align:center;
+  <title>monsalondulivre.fr — Plateforme de livres auto-édités</title>
+
+  <meta name="description"
+    content="monsalondulivre.fr : plateforme d'achat et de vente de livres auto-édités. Ouverture prochaine." />
+
+  <meta name="author" content="Arnaud DELPIERRE" />
+
+  <style>
+    * {
+      box-sizing: border-box;
     }
 
-    .container{
-        max-width:600px;
-        padding:40px;
-        background: rgba(0,0,0,0.3);
-        border-radius:12px;
-        backdrop-filter: blur(6px);
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+
+      background: linear-gradient(135deg, #7c2808, #ffffff);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+      text-align: center;
+      color: white;
     }
 
-    h1{
-        font-size:2.5rem;
-        margin-bottom:10px;
+    .container {
+      max-width: 600px;
+      width: 100%;
+
+      padding: 40px;
+
+      background: rgba(0, 0, 0, 0.35);
+
+      border-radius: 16px;
+
+      backdrop-filter: blur(6px);
+
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
-    p{
-        font-size:1.1rem;
-        opacity:0.9;
+    .logo {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+
+      margin-bottom: 30px;
     }
 
-    .footer{
-        margin-top:25px;
-        font-size:0.9rem;
-        opacity:0.7;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
     .bold {
-        font-weight: bold;
+      font-weight: bold;
     }
 
-    .btn{
-        display:inline-block;       
-        padding:10px 18px;
-        border-radius:6px;
-        background:white;
-        color:#7c2808ff;
-        text-decoration:none;
-        font-weight:bold;
-        transition:0.2s;
+    .btn {
+      display: inline-block;
+
+      margin-top: 10px;
+
+      padding: 12px 22px;
+
+      border-radius: 8px;
+
+      background: white;
+      color: #7c2808;
+
+      text-decoration: none;
+      font-weight: bold;
+
+      transition: all 0.2s ease;
     }
 
     .btn:hover {
-        background:#ddd;
+      background: #f0f0f0;
+      transform: translateY(-2px);
     }
-     .img {
-        display: flex;
-        align-items: center;
-        width: 20em;
-        height: auto;
-        margin-bottom: 2em;
-        }
-</style>
 
+    .footer {
+      margin-top: 30px;
+
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <main class="container">
 
-<!--<h1>🚧 Site en construction</h1>-->
+    <img
+      src="./img/transparent-logo.svg"
+      alt="Logo monsalondulivre.fr"
+      class="logo"
+    >
 
-<img src="./img/transparent-logo.svg" class="img">
+    <h1>Ouverture prochaine</h1>
 
-<p>
-monsalondulivre.fr la plateforme de vente <br> de <span class="bold">livres auto-édités</span> arrive bientôt!
+    <p>
+      monsalondulivre.fr, la nouvelle plateforme de vente de
+      <span class="bold">livres auto-édités</span>,
+      arrive bientôt !
+    </p>
 
-</p>
+    <p>
+      Revenez prochainement pour découvrir le projet.
+    </p>
 
-<p>
-Revenez bientôt pour découvrir le projet !
-</p>
+    <p>
+      Vous avez des suggestions ou des attentes ?
+    </p>
 
-<p>
-Vous avez des suggestions? des attentes? 
-</p>
+    <a class="btn" href="mailto:admin@monsalondulivre.fr">
+      Nous contacter
+    </a>
 
-<a class="btn" href="mailto:admin@monsalondulivre.fr">Nous contacter</a>
+    <div class="footer">
+      © 2026 — monsalondulivre.fr
+    </div>
 
-<div class="footer">
-© 2026 — www.monsalondulivre.fr
-</div>
-
-</div>
+  </main>
 
 </body>
+
 </html>
